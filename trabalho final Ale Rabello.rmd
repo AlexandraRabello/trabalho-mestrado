@@ -1,0 +1,376 @@
+
+
+---
+
+
+
+
+
+
+
+
+                                      
+                                      UNIVERSIDADE FEDERAL FLUMINENSE   
+                                           ESCOLA DE ENGENHARIA   
+                              PROGRAMA DE PÓS-GRADUAÇÃO EM ENGENHARIA CIVIL
+
+
+
+
+
+
+
+
+
+                                         Trabalho de Estatística
+                                          
+                                          
+                                          
+                                        
+                                        
+                                        
+                                        
+                           
+                          
+             As construtoras que mais se destacaram no ano de 2018 - Regiao Sudeste
+                        
+                                          
+                                          
+                                          
+                                         
+
+
+
+
+
+
+
+                                         Aluno: Alexandra Rabello   
+                                Disciplina: Estatística aplicada à engenharia   
+                                            Docente: Steven Ross   
+                                           Matrícula: M015.221.001  
+                                               
+                                               
+                                                 Niterói   
+                                               
+                                                   2022
+
+```
+
+
+
+
+#  1. **Introdução**
+
+Nos últimos três anos, a construção civil brasileira se transformou em um setor caótico de incertezas, demissões e queda brusca nos níveis de atividade.
+
+A Construção Civil é a área que abrange todas as atividades e etapas relacionadas à produção de obras. Isso quer dizer que desde o planejamento de uma obra, sua execução, manutenção e até mesmo restauração fazem parte da mesma atividade econômica, em todas as suas subdivisões.  
+
+As obras podem ser em diferentes segmentos como edifícios, instalações prediais, aeroportos, estradas, canais de navegação, portos, túneis, obras de saneamento, de fundações e terra em geral.
+
+Atualmente, existem mais de 400 mil negócios voltados para esse seguimento e, de acordo com o CONCLA (Comissão Nacional de Classificação), a Construção Civil é composta por mais de um CNAE (Código Nacional de Atividade Econômica).
+
+Com o objetivo de verificar o resusrgimento deste seguimento, após uma crise muito avassaladora causada pela corrpução em algumas compnahias, que alterou drsticamente a estrutura de muitas empresas. Foi entao que a Câmara Brasileira da Indústria da Construção (CBIC) sendo uma entidade que tem como objetivo analisar as mais diversas questões que envolvem o mercado da construção civil, como: variação do preço dos insumos, variação de consumo dos principais materiais utilizados nas obras, estudo do grau de aceitação de novos materiais, entre outros, além de, frequentemente, divulgar boletins de dados estatísticos e financeiros inerentes aos parâmetros desse setor tão importante para a sociedade, que é a construção civil,sendo assim realizou essa análise e elegeu as cinquenta maiores construtoras no ranking nacional, referente ao ano de 2018. 
+
+
+As construtoras selecionadas da região Sudeste, foram as seguintes:
+
+1)Odebrecht
+2)Construtora Queiroz Galvão
+3)MRV Engenharia
+4)Triunfo
+5)Construções e Comércio Camargo Correa
+6)Direcional Engenharia
+7)Toniolo, Busnello
+8)Empresa Construtora Brasil
+9)Construcap 1
+10)Serveng-Civilsan
+11)Racional Engenharia 1
+12)HTB 1
+13)UeM Mineração e Construção
+14)Pacaembu Construtora
+15)S.A Paulista
+16)Planova
+17)Gafisa
+18)Rio Verde Engenharia e Construções 1
+19)Afonso França Engenharia 1
+20)EMPA Serviços de Engenharia
+21)Construtora JL
+22)Tiisa
+23)Terracom Construções 
+24)Seta Engenharia
+25)Acciona Construcción
+26)Construtora Ferreira Guedes
+27)Via Engenharia
+28)Rossi Residencial
+29)LCM
+30)Constroeste Construtora
+31)Pelicano Construções 
+32)Paulitec Construções 1
+33)TODA 1
+34)Construtora Marquise
+35)Construtora Tenda
+36)Matec Engenharia 1
+37)A.YOSHI Engenharia
+38)Sá Cavalcante
+39)BN Engenharia
+40)Engenharia e Comércio Bandeirantes
+41)Passarelli
+42)Setep Construções
+43)Carioca Engenharia
+44)Engeform Engenharia
+45)EMCCAMP Residencial
+46)J.Malucelli Construtora de Obras
+47)Construtora Fonseca e Mercadante 1
+48)Cesbe 1
+49)Dois A Engenharia 1
+50)Construtora Barbosa Mello
+
+ 
+# 2. Objetivos Gerais
+
+O objetivo do estudo desenvolvido foi demonstar através da comparação dos resultados das empresas de construção no ano de 2015, tendo como premissas os pontos avaliados no presente estudo: receita bruta, patrimonio liquido, contratos publicos, contratos privados, incorporacões próprias, equipamentos, total de empregados, pessoal graduado, referente ao ano de 2018 e apresentar o impacto desses resultados atraves da matriz de correlação e testes de hipóteses.
+
+# 2.1 Objetivos Específicos
+
+Verificar através de testes estatísticos,de gráficos e como as variáveis qualitativas e quantitativas podem se relacionar entre si e qual é o resultado dessa análise no que concerne aos critério avaliados para que as mesmas pudessem chegar no topo do ranking.
+
+
+#** 3. Metodologia **
+     
+O presente trabalho se divide nas seguintes etapas: 
+
+Etapa 1 - Importação da base de dados referente as cinquentas maiores construtoras do ranking nacional do ano de 2018, elesitas pelo CBIC (Câmara Brasileira da Indústria da Construção)
+
+Etapa 2 - Manipulação e análise estatística das principais variáveis do banco de dados;
+
+Etapa 3 - Teste de Hipóteses Estatísticas e suas interpretações no que tange à escolha da melhro construtora;
+
+Etapa 4 - Avaliação dos Resultados através de Gráficos do tipo Boxplot, juntamente com suas interpretações; 
+
+Etapa 5 - Diagrama de Dispersão e Matriz de Correlação para as principais variáveis e suas interpretações;
+
+Etapa 6 - Mapas nacionais da evolução do preço do aço no referido ano juntamente com outros mapas de outras variáveis importantes nesse trabalho, como IDH e Renda Média da população, incluindo suas interpretações;
+
+#### A tabela abaixo apresenta a base de dados do CBIC utilizada nessa pesquisa:
+  
+
+  
+```{r}
+
+
+# Biblioteca para incluir o banco de dados na forma de tabela: 
+
+library(kableExtra) 
+
+# Base de dados utilizada no trabalho:
+
+library(readxl)
+dados <- read_excel("C:/Users/alexa/Downloads/tabela_10.A.01_6.xlsx", 
+    sheet = "2018")
+View
+
+# Apresentando os números sem notação científica:
+
+options(scipen = 999)
+
+# Realizando a manipulação da tabela da base de dados: 
+
+ kable(dados, row.names = FALSE)%>%
+  kable_styling( full_width = T,bootstrap_options = c("striped", "hover", "condensed", "responsive"), 
+                 position = "center", fixed_thead = T) %>%
+  scroll_box(width = "900px", height = "600px")
+```
+
+### 3.1 Dicionário de dados
+
+A tabela abaixo constitui o dicionário de dados, em que constam as variáveis e uma breve explicação sobre as mesmas. 
+
+Abaixo está apresentado o dicionário de dados, local onde estão todas as variáveis do banco de dados:
+```{r}
+# Base de dados em que está o dicionário de dados:
+
+library(readxl)
+dicio <- read_excel("C:/Users/alexa/Downloads/tabela_10.A.01_6.xlsx", 
+    sheet = "2018")
+
+# Execução e manipulação da tabela:
+
+library(DT)
+
+DT::datatable(dicio, rownames = FALSE, colnames = FALSE)
+```
+
+### O presente trabalho é constituido das seguintes etapas:
+
+Etapa 1 - Importação da base de dados referente  as cinquentas maiores construtoras do ranking nacional do ano de 2018, elesitas pelo CBIC (Câmara Brasileira da Indústria da Construção) ;
+
+Etapa 2 - Manipulação estatística das principais variáveis do banco de dados;
+
+Etapa 3 - Teste de Hipóteses Estatísticas e suas interpretações inerentes ao trabalho;
+
+Etapa 4 - Gráficos do tipo Boxplot juntamente com suas interpretações;
+
+Etapa 5 - Estatísticas dos dados e suas interpretações;
+
+Etapa 6 - Diagrama de Dispersão e Matriz de Correlação das principais variáveis e suas interpretações;
+
+Etapa 7 - Mapas nacionais das respectivas empresas que desputaram o ranking com as principais variáveis e suas interpretações.
+
+As variáveis qualitativas utilizadas foram empresas, estado, região, e as quantitativas foram PIB, receita bruta, código, patrimônio líquido, Contratos publicos e privados, empregados e empregados graduado.
+
+Todo o processo de elaboração do trabalho foi feito no programa de estatística RStudio, em seguida foi utilizado o RMarkdown para realizar uma publicação em HTML. Segue abaixo a preparação das variáveis e as bibliotecas:
+```{r}
+options(digits=2)
+options(scipen = 999)
+library(corrplot)
+```
+  
+```{r}
+library(readxl)
+View
+```
+
+```{r}
+library(ggplot2)
+View
+```
+
+```{r}
+library(forcats)
+View
+```
+
+
+```{r}
+library(psych)
+View
+```
+
+### Após a preparação dos dados foram elaborados estatisticas, gráficos corplot, diagrama de dispersão, balloomplot, boxplot, matriz de correlação e teste de hipóteses com suas interpretações.
+
+
+```{r}
+library(readxl)
+
+dad_matr <- read_excel("C:/Users/alexa/Downloads/tabela_10.A.01_6.xlsx", 
+    sheet = "2018")
+View
+```
+
+
+## 4.Testes de Hipóteses
+
+### 4.1 Testes de Hipóteses para a verificação da normalidade de uma variável
+
+- Teste de Shapiro-Wilk.
+
+### 4.1 Testes de Hipóteses realizados para as variáveis que não apresentam distribuição normal
+
+- Teste da Correlação de Spearman;
+- Teste de Kruskal-Wallis;
+- Teste de Comparações Múltiplas de Wilcoxon.
+
+### 4.2 Testes de Hipóteses para a variável que apresentam distribuição normal
+
+- Teste de Bartlett;
+- Teste Anova;
+- Teste das Comparações Múltiplas de Tukey
+
+## 5. Execução dos Testes de Hipóteses
+
+### 5.1 Teste de Shapiro-Wilk
+
+O objetivo deste teste é fornecer uma estatística para avaliar se uma amostra tem distribuição normal. O teste pode ser utilizado para amostras de qualquer tamanho. A avaliação do pressuposto de normalidade é exigida pela maioria dos procedimentos estatísticos
+
+#### 5.1.1 Teste de Shapiro-wilk para as variáveis empresas e regiao
+
+O Teste de Shapiro, utilizado,para variáveis quantitativas, será executado para as seguintes variáveis do banco de dados desse trabalho:
+  
+```{r}
+library
+shapiro.test
+```
+
+a) Teste de Shapiro Wilk
+Foi executado o teste de Shapiro Wilk para a váriavel quantitativa receita bruta.
+Teste de normalidade (Shapiro Wilk)
+H0: os dados seguem uma distribuição normal
+H1: os dados NÃO seguem uma distribuição normal
+alpha = 0.05
+
+
+ data:  dados2013$`RECEITA BRUTA ATUALIZADA`
+W = 0.6, p-value = 0.0000000002
+
+Constatou-se que para a variavel quantitativa receita bruta o P-valor foi menor do que 0,05, logo rejeita-se H0, concluindo que os dados não seguem uma distribuição normal. (Ano de 2018).
+
+pvalor<0.05
+Rejeito H0 (os dados NÂO seguem uma distribuição normal)
+
+Como o P-valor foi menor do que 0,05 e com isso não apresentaram uma distrbuição normal foi feito o teste de Spearman
+
+
+b) Teste de correlação spearman
+
+H0(Hipótese nula): se o valor de rho = 0: não há correlação entre as variáveis. #H1(Hipótese alternativa): se o valor de rho for diferente de zero: há correlação entre as variáveis. #alpha = 0,05
+
+Se Pvalor ≤ alpha: rejeita-se H0 #Se Pvalor > alpha: não se rejeita H0
+
+dados2013$CODIGO, : Cannot compute exact p-value with ties
+
+Spearman's rank correlation rho
+ 
+S = 6325, p-value = 0.00000002
+ alternative hypothesis: true rho is not equal to 0
+ sample estimates:
+ rho 
+ 0.7
+
+
+Cannot compute exact p-value with ties
+ Spearman's rank correlation rho
+ 
+
+ S = 17017, p-value = 0.2
+ alternative hypothesis: true rho is not equal to 0
+ sample estimates:
+ rho 
+ 0.18
+
+Pode-se verificar que o p-valor é menor do que o alpha de 0,05 e que o rho é distante de -1 nos teste de correlação de speraman, logo rejeita-se a hipotese nula (H0) e podemos afirmar que existe correlação entre as duas variáveis.
+
+
+c) Teste de Kruskal-wallis
+Teste se a condição investigadas interfere na Receita bruta
+H0: distribuições idênticas.
+H1: diferentes distribuições.
+
+
+
+Conforme observado nos dois testes  o p-valor é menor do que 0,05, logo rejeita-se H0, ou seja, apresentam distribuições distintas.
+
+
+d) Teste de comparação multipla de Wilcoxon
+H0: os dois grupos são amostrados de populações com distribuições idênticas. H1: os dois grupos são amostrados de populações com distribuições diferentes.  alpha = 0.05
+
+
+
+
+5. Conclusão
+
+A partir dos resultados obtidos é possível concluir que aS cinquentas maiores CONSTRUTORAS, referente ao RANKING NACIONAL ANO 2018, influenciou as empresas construtoras no Brasil, ficou demonstrado nas análises que houve uma diminiuição da Receita bruta e do Patrimonio líquido das 50 maiores empresas de construção civil no Brasil. 
+
+
+## Referencias Bibliográficas
+
+https://www.ibge.gov.br/institucional/o-ibge.html.Acesso em: 08 mar. 2021.
+CBIC.Câmara Brasileira da Indústria da Construção.Disponível em: http://www.cbicdados.com.br/menu/materiais-de-construcao/cimento.Acesso em: 04 mar. 2021.
+CBIC.Câmara Brasileira da Indústria da Construção.Disponível em: https://cbic.org.br/institucional/.Acesso em: 11 mar. 2021.
+BRASIL. Lei nº 12.846, de 1º de agosto de 2013. Diário Oficial da República Federativa do Brasil, Brasília, DF. Disponível em http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12846.htm. Acessado em: 19 out. 2020.
+BRASIL. Decreto nº 8.420, de 18 de março de 2015. Diário Oficial da República Federativa do Brasil, Brasília, DF. Disponível em http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2015/Decreto/D8420.htm. Acessado em: 19 out. 2020.
+BRASIL. Portaria nº 909, de 7 de abril de 2015, do Ministério de Estado Chefe da Controladoria Geral da União. Diário Oficial da República Federativa do Brasil, Brasília, DF. Disponível em https://repositorio.cgu.gov.br/bitstream/1/34001/8/Portaria909_2015.PDF. Acessado em: 21 out. 2020.
+BRASIL. Portaria nº 909, de 7 de abril de 2015, do Ministério de Estado Chefe da Controladoria Geral da União. Diário Oficial da República Federativa do Brasil, Brasília, DF. disponível em https://repositorio.cgu.gov.br/bitstream/1/34001/8/Portaria909_2015.PDF. Acessado em: 22 out. 2020.
+BRASIL. Portaria nº 910, de 7 de abril de 2015, do Ministério de Estado Chefe da Controladoria Geral da União. Diário Oficial da República Federativa do Brasil, Brasília, DF. Disponível em https://repositorio.cgu.gov.br/bitstream/1/33650/8/Portaria_CGU_910_2015.pdf. Acessado em: 22 out. 2020.
+A experiência da CGU no fomento a integridade na aplicação da Lei anticorrupção. 2017. Disponível em: https://repositorio.cgu.gov.br/handle/1/32933. Acessado em: 20 out.2020.
+
